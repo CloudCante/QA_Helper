@@ -14,7 +14,7 @@ class FileProcessorApp:
         ctk.set_appearance_mode("System")
         ctk.set_default_color_theme("blue")
 
-        self.root.title("PDF Processor")
+        self.root.title("QA Helper")
         self.root.geometry("600x400")
 
         # Create the main frame
