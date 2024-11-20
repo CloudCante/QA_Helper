@@ -47,32 +47,32 @@ class FileProcessorApp:
         part_name_menu = ctk.CTkOptionMenu(main_frame, variable=self.part_name_var, values=part_name_options)
         part_name_menu.grid(row=1, column=1, padx=10, pady=5, sticky="w")
 
-        # Entry for Lab Number
-        lab_number_label = ctk.CTkLabel(main_frame, text="Lab Number:")
-        lab_number_label.grid(row=2, column=0, padx=10, pady=5, sticky="e")
-        self.lab_number_entry = ctk.CTkEntry(main_frame)
-        self.lab_number_entry.grid(row=2, column=1, padx=10, pady=5, sticky="w")
-
         # Dropdown for Type
         type_var = ctk.StringVar(self.root)
         type_options = ["WC", "SK", "CA"]  # Original options
         type_var.set(type_options[0])  # Default value
         type_menu = ctk.CTkOptionMenu(main_frame, variable=type_var, values=type_options)
-        type_menu.grid(row=3, column=1, padx=10, pady=5, sticky="w")
+        type_menu.grid(row=2, column=1, padx=10, pady=5, sticky="w")
 
         # Dropdown for Side
         side_var = ctk.StringVar(self.root)
         side_options = ["LH", "RH"]  # Original options
         side_var.set(side_options[0])  # Default value
         side_menu = ctk.CTkOptionMenu(main_frame, variable=side_var, values=side_options)
-        side_menu.grid(row=4, column=1, padx=10, pady=5, sticky="w")
+        side_menu.grid(row=3, column=1, padx=10, pady=5, sticky="w")
 
         # Dropdown for Test Name
         test_var = ctk.StringVar(self.root)
         test_options = ["Micros"]  # Original test options
         test_var.set(test_options[0])  # Default value
         test_menu = ctk.CTkOptionMenu(main_frame, variable=test_var, values=test_options)
-        test_menu.grid(row=5, column=1, padx=10, pady=5, sticky="w")
+        test_menu.grid(row=4, column=1, padx=10, pady=5, sticky="w")
+
+           # Entry for Lab Number
+        lab_number_label = ctk.CTkLabel(main_frame, text="Lab Number:")
+        lab_number_label.grid(row=5, column=0, padx=10, pady=5, sticky="e")
+        self.lab_number_entry = ctk.CTkEntry(main_frame)
+        self.lab_number_entry.grid(row=5, column=1, padx=10, pady=5, sticky="w")
 
         # Entry for Batch Number
         batch_label = ctk.CTkLabel(main_frame, text="Batch Number:")
